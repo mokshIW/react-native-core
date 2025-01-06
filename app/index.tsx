@@ -1,7 +1,9 @@
 import BasicCoreComponents from "@/components/BasicCoreComponents";
+import FlexLayout from "@/components/FlexLayout";
 import ScrollViewComponent from "@/components/ScrollViewComponent";
 import StylingComponents from "@/components/StylingComponents";
 import TextInputComponent from "@/components/TextInputComponent";
+import TouchableComponent from "@/components/TouchableComponent";
 import { ScrollView, View } from "react-native";
 
 export default function Index() {
@@ -14,6 +16,8 @@ export default function Index() {
       <TextInputComponent />
       <ScrollViewComponent />
       <StylingComponents />
+      <FlexLayout />
+      <TouchableComponent />
     </ScrollView>
   );
 }
