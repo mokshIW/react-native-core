@@ -1,9 +1,17 @@
-import { Text, View } from "react-native";
+import BasicCoreComponents from "@/components/BasicCoreComponents";
+import ScrollViewComponent from "@/components/ScrollViewComponent";
+import TextInputComponent from "@/components/TextInputComponent";
+import { ScrollView, View } from "react-native";
 
 export default function Index() {
   return (
-    <View className="flex items-center justify-center h-full">
-      <Text className="text-2xl font-bold">app/index.tsx file.</Text>
-    </View>
+    <ScrollView
+      nestedScrollEnabled={true}
+      contentContainerClassName="p-4 mt-10 mb-20"
+    >
+      <BasicCoreComponents />
+      <TextInputComponent />
+      <ScrollViewComponent />
+    </ScrollView>
   );
 }
