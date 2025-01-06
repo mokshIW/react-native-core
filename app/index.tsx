@@ -1,23 +1,30 @@
-import BasicCoreComponents from "@/components/BasicCoreComponents";
-import FlexLayout from "@/components/FlexLayout";
-import ScrollViewComponent from "@/components/ScrollViewComponent";
-import StylingComponents from "@/components/StylingComponents";
-import TextInputComponent from "@/components/TextInputComponent";
-import TouchableComponent from "@/components/TouchableComponent";
-import { ScrollView, View } from "react-native";
+import BasicCoreComponents from "@/components/CoreComponents/BasicCoreComponents";
+import FlexLayout from "@/components/CoreComponents/FlexLayout";
+import ScrollViewComponent from "@/components/CoreComponents/ScrollViewComponent";
+import StylingComponents from "@/components/CoreComponents/StylingComponents";
+import TextInputComponent from "@/components/CoreComponents/TextInputComponent";
+import TouchableComponent from "@/components/CoreComponents/TouchableComponent";
+import { ScrollView, Text, View } from "react-native";
 
 export default function Index() {
   return (
     <ScrollView
       nestedScrollEnabled={true}
-      contentContainerClassName="p-4 mt-10 mb-20"
+      contentContainerClassName="flex p-4 my-4"
     >
+      {/* <Text className="text-3xl font-bold text-center my-4">
+        Core Components
+      </Text>
       <BasicCoreComponents />
       <TextInputComponent />
       <ScrollViewComponent />
       <StylingComponents />
       <FlexLayout />
-      <TouchableComponent />
+      <TouchableComponent /> */}
+
+      <Text className="text-3xl font-bold text-center my-4">
+        Todo App Components
+      </Text>
     </ScrollView>
   );
 }
