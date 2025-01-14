@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, TouchableOpacity, Modal, Pressable } from "react-native";
+import { BlurView } from "expo-blur"; // Import BlurView
 import WheelContent from "./WheelContent";
 
 export default function WheelOfFortune() {
@@ -28,9 +29,16 @@ export default function WheelOfFortune() {
         onRequestClose={toggleModal}
       >
         <Pressable
-          className="flex-1 bg-black/40 bg-opacity-50 justify-center items-center"
+          className="flex-1 justify-center items-center"
           onPress={toggleModal}
         >
+          {/* Blurred Background */}
+          <BlurView
+            intensity={9} // Adjust blur intensity (0-100)
+            tint="dark" // Options: "dark", "light", "default"
+            className="absolute top-0 bottom-0 left-0 right-0"
+          />
+
           <View
             className="w-4/5 bg-white rounded-lg p-5 shadow-md"
             onStartShouldSetResponder={() => true} // To prevent closing modal when interacting inside
