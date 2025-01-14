@@ -4,6 +4,7 @@ import ScrollViewComponent from "@/components/CoreComponents/ScrollViewComponent
 import StylingComponents from "@/components/CoreComponents/StylingComponents";
 import TextInputComponent from "@/components/CoreComponents/TextInputComponent";
 import TouchableComponent from "@/components/CoreComponents/TouchableComponent";
+import TodoAppComponent from "@/components/TodoAppComponents/TodoAppComponent";
 import { ScrollView, Text, View } from "react-native";
 
 export default function Index() {
@@ -22,9 +23,7 @@ export default function Index() {
       <FlexLayout />
       <TouchableComponent /> */}
 
-      <Text className="text-3xl font-bold text-center my-4">
-        Todo App Components
-      </Text>
+      <TodoAppComponent />
     </ScrollView>
   );
 }
